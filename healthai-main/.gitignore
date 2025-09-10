@@ -1,0 +1,67 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies (ignore node_modules in all subdirectories)
+node_modules/
+**/node_modules/
+
+# yarn & pnpm
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (ignore .env in all subdirectories)
+.env
+**/.env
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# frontend
+frontend/node_modules
+
+# backend
+backend/node_modules
+backend/.next
+backend/build
+backend/out
+
+# cache and virtual environments
+**/.next
+aibackend/__pycache__
+aibackend/venv
+aibackend/nothere
+aibackend/fine_tuned_medical_chatbot
+aibackend/chest_disease_model.pth
+aibackend/my_model
+aibackend/fine_tuned_medical_chatbotd
+aibackend/fine_tuned_medical_chatbotn
+

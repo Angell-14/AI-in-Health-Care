@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+transformers
+torch
+torchvision
+Pillow
+langdetect
+keras
+tensorflow
+numpy
