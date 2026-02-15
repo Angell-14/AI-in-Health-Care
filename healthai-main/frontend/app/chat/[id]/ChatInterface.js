@@ -82,7 +82,7 @@ const ChatInterface = () => {
     let endpointUrl = '';
 
 if (selectedPrediction === 'brain-predict') {
-  endpointUrl = 'https://health-ai-aibackend.onrender.com/predictbrain';
+  endpointUrl = 'https://health-ai-aibacken.onrender.com/predictbrain';
 } else {
   endpointUrl = `https://health-ai-backendd.onrender.com/diseases/${selectedPrediction}`;
 }
