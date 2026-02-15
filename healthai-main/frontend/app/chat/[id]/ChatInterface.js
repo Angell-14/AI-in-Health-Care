@@ -38,7 +38,7 @@ const ChatInterface = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://health-ai-backend.onrender.com/api/hit', {
+      const response = await fetch('https://health-ai-backendd.onrender.com/api/hit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -80,11 +80,12 @@ const ChatInterface = () => {
 
     // Determine endpoint URL based on prediction option
     let endpointUrl = '';
-    if (selectedPrediction === 'brain-predict') {
-      endpointUrl = 'http://localhost:8000/predictbrain';
-    } else {
-      endpointUrl = `http://localhost:5000/diseases/${selectedPrediction}`;
-    }
+
+if (selectedPrediction === 'brain-predict') {
+  endpointUrl = 'https://health-ai-aibackend.onrender.com/predictbrain';
+} else {
+  endpointUrl = `https://health-ai-backendd.onrender.com/diseases/${selectedPrediction}`;
+}
 
     try {
       const response = await fetch(endpointUrl, {
